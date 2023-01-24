@@ -1,0 +1,36 @@
+#animated-circle {
+    width: 200px;
+    height: 200px;
+    position:relative;
+
+}
+
+.spinner {
+    width: 100%;
+    height: 100%;
+    border: 20px solid transparent;
+    border-top-color: #fb5dad;
+    border-bottom-color: #b97aff;
+    border-left-color: #55fb9f;
+    border-right-color: #55fb9f;
+    border-radius: 50%;
+    animation: spin 2s linear infinite;
+    box-shadow: 0 0 20px 5px #fb5dad, 
+    0 0 20px 5px #55fb9f, 0 0 20px 5px #b97aff;
+ 
+    
+    
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+body{
+    background-color: #050210;
+}
